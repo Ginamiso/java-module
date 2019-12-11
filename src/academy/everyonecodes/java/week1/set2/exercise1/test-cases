@@ -1,0 +1,12 @@
+calculateJumps
+    -1 -> 0
+    0 -> 0
+    1 -> 6
+    2 -> 12
+calculateBarks
+    -1 -> 0
+    0 -> 1
+    1 -> 2
+    2 -> 3
+
+
