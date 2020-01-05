@@ -4,7 +4,7 @@ public class Car {
     private String color;
     private int yearBuilt;
 
-    public Car(String color, int year) {
+    public Car(String color, int yearBuilt) {
         this.color = color;
         this.yearBuilt = yearBuilt;
     }
@@ -13,8 +13,8 @@ public class Car {
         return color;
     }
 
-    public void getYearBuilt(int yearBuilt) {
-        this.yearBuilt = yearBuilt;
+    public int getYearBuilt() {
+        return yearBuilt;
     }
 
 }
