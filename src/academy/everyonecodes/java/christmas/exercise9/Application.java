@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        NameGetter nameGetter = new NameGetter();
-        List<String> files = nameGetter.getAllPhotoFileNames();
+        PhotoDirectory photoDirectory = new PhotoDirectory();
+        List<String> files = photoDirectory.getAllPhotoFileNames();
         NameGenerator nameGenerator = new NameGenerator();
         FileRenamer fileRenamer = new FileRenamer();
         for(String file : files){

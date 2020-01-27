@@ -4,22 +4,21 @@ import academy.everyonecodes.java.christmas.exercise2.TramTimeCalculator;
 import academy.everyonecodes.java.christmas.exercise2.WalkingTimeCalculator;
 
 public class CommuteTimeCalculator {
-    public double calculateWalkingTime(double kilometers) {
-        int walkingSpeed = 15;
-        return kilometers * walkingSpeed;
+
+    double calculateWalkingTime(double kilometers) {
+
+        return kilometers * 15;
     }
 
-    public int calculateTramTime(int stations) {
-        int tramSpeed = 4;
-        return stations * tramSpeed;
+    double calculateTramTime(double stations) {
+
+        return stations * 4;
     }
 
-    public double calculateTotalTime(int stations, double walkingToTram, double walkingToHouse) {
-        WalkingTimeCalculator walkingTime = new WalkingTimeCalculator();
-        double walkingTramTime = walkingTime.calculateWalkingTime(walkingToTram);
-        double walkingHouseTime = walkingTime.calculateWalkingTime(walkingToHouse);
-        TramTimeCalculator tramTime = new TramTimeCalculator();
-        int tram = tramTime.calculateTramTime(stations);
+    public double calculateTotalTime(double stations, double walkingToTram, double walkingToHouse) {
+        double walkingTramTime = calculateWalkingTime(walkingToTram);
+        double walkingHouseTime = calculateWalkingTime(walkingToHouse);
+        double tram = calculateTramTime(stations);
         return walkingTramTime + walkingHouseTime + tram;
     }
 }

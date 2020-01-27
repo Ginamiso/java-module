@@ -1,11 +1,8 @@
 calculateAverage
     [1,2,3] -> 2, 0.001524
     [] -> error, error
-collect
-    30,45,55 -> [30,45,55]
-    0,0,0 -> [0,0,0]
-     , , , ->[]
+
 calculateDistanceInKilometers
     100 -> 0.0762
     0 -> 0
-    -30 -> error
+

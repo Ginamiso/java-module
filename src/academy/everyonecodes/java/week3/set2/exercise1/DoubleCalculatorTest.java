@@ -10,6 +10,8 @@ class DoubleCalculatorTest {
 
     @ParameterizedTest
     @CsvSource({
+            "0,0,0",
+            "1,1,0",
             "4.4,2.2,2.2",
             "-4.4,-2.2,-2.2",
             "0.4, 0.2,0.2"

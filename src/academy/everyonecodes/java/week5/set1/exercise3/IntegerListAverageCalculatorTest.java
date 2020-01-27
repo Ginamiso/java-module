@@ -12,11 +12,13 @@ class IntegerListAverageCalculatorTest {
     @Test
     void calculate(){
         List<Integer> input = List.of(1,4,7,5,3);
+
         Optional<Double> oResult = averageCalculator.calculate(input);
-        double result = oResult.get();
+        Assertions.assertTrue(oResult.isPresent());
+
         double expected = 4;
 
-        Assertions.assertEquals(expected, result);
+        Assertions.assertEquals(expected, oResult.get());
 
     }
     @Test
@@ -31,10 +33,10 @@ class IntegerListAverageCalculatorTest {
     void calculate3(){
         List<Integer> input = List.of(20,30,5,3);
         Optional<Double> oResult = averageCalculator.calculate(input);
-        double result = oResult.get();
+        Assertions.assertTrue(oResult.isPresent());
         double expected = 14.5;
 
-        Assertions.assertEquals(expected, result);
+        Assertions.assertEquals(expected, oResult.get());
 
     }
 }

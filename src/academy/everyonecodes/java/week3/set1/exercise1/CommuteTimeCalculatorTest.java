@@ -25,7 +25,7 @@ class CommuteTimeCalculatorTest {
 
         int input = 5;
 
-        int result = commuteTimeCalculator.calculateTramTime(input);
+        double result = commuteTimeCalculator.calculateTramTime(input);
 
         int expected = 20;
 

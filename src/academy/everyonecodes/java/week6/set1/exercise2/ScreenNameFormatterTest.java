@@ -10,30 +10,30 @@ class ScreenNameFormatterTest {
     @Test
     void createBusinessClass() {
         Customer input = new Customer("Jacke", "business");
-        Customer result = screenNameFormatter.create(input);
+        String result = screenNameFormatter.create(input);
 
-        Customer expected = new Customer("JACKE", "business");
+        String expected = "JACKE";
 
-        Assertions.assertEquals(expected.getName(), result.getName());
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
     void createEconomyClass() {
         Customer input = new Customer("Jacke", "economy");
-        Customer result = screenNameFormatter.create(input);
+        String result = screenNameFormatter.create(input);
 
-        Customer expected = new Customer("jacke", "economy");
+        String expected = "jacke";
 
-        Assertions.assertEquals(expected.getName(), result.getName());
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
     void createCornerCase() {
         Customer input = new Customer("JACKE", "Economy");
-        Customer result = screenNameFormatter.create(input);
+        String result = screenNameFormatter.create(input);
 
-        Customer expected = new Customer("jacke", "economy");
+        String expected = "jacke";
 
-        Assertions.assertEquals(expected.getName(), result.getName());
+        Assertions.assertEquals(expected, result);
     }
 }

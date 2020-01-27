@@ -8,7 +8,13 @@ public class Cashier {
     public void billCustomer(Cart cart){
         double total = 0;
         for(CartItem cartItem : cart.getCartItems()){
-            total = total + (cartItem.getAmount()*cartItem.getProduct().getPricePerUnit());
+            int amount = cartItem.getAmount();
+            Product product = cartItem.getProduct();
+            double pricePerUnit = product.getPricePerUnit();
+
+            double priceForCartItem = pricePerUnit*amount;
+
+            total = total + priceForCartItem;
 
         }
         System.out.println(cart.getName()+" has to pay "+total+" Euros.");

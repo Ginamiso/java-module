@@ -6,6 +6,9 @@ import java.util.Random;
 public class StringListFirstHalfPicker {
 
     public String pick(List<String> strings){
+        if(strings.size() ==1){
+            return strings.get(0);
+        }
         Random random = new Random();
         int size = strings.size();
         int randomIndexFirstHalf = random.nextInt(size/2);

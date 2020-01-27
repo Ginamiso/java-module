@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringToIntegersParser {
+
     public List<Integer> parse(String stringOfNumbers) {
         List<String> listOfNumbers = List.of(stringOfNumbers.split(";"));
         List<Integer> numbers = new ArrayList<>();

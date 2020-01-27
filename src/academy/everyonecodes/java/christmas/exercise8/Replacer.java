@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Replacer {
     public List<Integer> replaceValue(int newValue, int position, List<Integer> numbers) {
-        int count = 0;
         List<Integer> replaced = new ArrayList<>();
-        for (int number : numbers) {
-            if (count == position){
-                replaced.add(newValue);
-            }else{
-                replaced.add(number);
-            }count = count +1;
+        for (int i = 0; i<numbers.size(); i++) {
+            int currentValue = numbers.get(i);
+            if (i==position){
+                currentValue=newValue;
+            }
+            replaced.add(currentValue);
+
         }
         return replaced;
 

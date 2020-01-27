@@ -1,9 +1,11 @@
 package academy.everyonecodes.java.week2.set2.exercise5;
 
 public class ShoeCustomer {
-    private double size;
 
-    public ShoeCustomer(double size){
+    private int size;
+
+    public ShoeCustomer(int size){
+
         this.size = size;
     }
 

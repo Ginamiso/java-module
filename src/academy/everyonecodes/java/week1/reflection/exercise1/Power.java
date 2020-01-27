@@ -9,8 +9,8 @@ public class Power {
         }
         return result;
     }public static void main(String[] args){
-        int number = 2;
-        int power = 5;
+        int number = 0;
+        int power = 0;
         int result = raiseToPower(number, power);
         System.out.println(result);
     }

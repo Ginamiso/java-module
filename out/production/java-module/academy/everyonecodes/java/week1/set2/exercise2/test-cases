@@ -1,5 +1,0 @@
-combine
-    [],[] -> []
-    ["dog", "cat"], ["dragon", "magic", "fire"] -> ["dog","dragon","cat,"magic","fire"]
-    ["dragon","magic","fire], ["dog","cat"] -> ["dragon", "dog","magic","cat","fire"]
-    ["dragon"],["butterfly"]->["dragon","butterfly"]

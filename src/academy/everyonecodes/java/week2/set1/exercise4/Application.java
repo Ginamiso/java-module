@@ -2,7 +2,7 @@ package academy.everyonecodes.java.week2.set1.exercise4;
 import java.util.List;
 import java.util.ArrayList;
 public class Application {
-    public static void explain(Menu menu){
+    private static void explain(Menu menu){
         for(Dish dish : menu.getDishes()){
             System.out.println(dish.getName() + " for " + dish.getPrice() + " Euro.");
         }

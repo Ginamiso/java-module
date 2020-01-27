@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-public class StringListFirstHalfPickerTest {
+class StringListFirstHalfPickerTest {
 
     StringListFirstHalfPicker stringListFirstHalfPicker = new StringListFirstHalfPicker();
 
@@ -14,9 +14,28 @@ public class StringListFirstHalfPickerTest {
 
         List<String> input = List.of("ciao","miao", "cane","gatto", "bau");
         String result = stringListFirstHalfPicker.pick(input);
-        System.out.println(result);
+        List<String> expectedPossibilities = List.of("ciao", "miao");
 
-        Assertions.assertTrue(input.contains(result));
+        Assertions.assertTrue(expectedPossibilities.contains(result),result);
 
+    }
+    @Test
+    void pick2(){
+
+        List<String> input = List.of("ciao","miao", "cane","gatto");
+        String result = stringListFirstHalfPicker.pick(input);
+        List<String> expectedPossibilities = List.of("ciao","miao");
+
+        Assertions.assertTrue(expectedPossibilities.contains(result),result);
+
+    }
+    @Test
+    void pick3(){
+
+        List<String> input = List.of("ciao");
+        String result = stringListFirstHalfPicker.pick(input);
+        String expected = "ciao";
+
+        Assertions.assertEquals(expected, result);
     }
 }

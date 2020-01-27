@@ -12,22 +12,22 @@ class StringOverlapFinderTest {
     @ParameterizedTest
     @CsvSource({
             "el, michael, elias",
-            "an, anaconda, ancona",
-            "a, arto, azur"
+            "an, man, anaconda",
+            "ta, malta, tavola",
+            "in, mountain, inside"
     })
     void findString(String expected, String input1, String input2) {
         Optional<String> oResult = stringOverlapFinder.find(input1, input2);
-        Assertions.assertTrue(oResult.isPresent());
-        String result = oResult.get();
 
-        Assertions.assertEquals(expected, result);
+        Assertions.assertTrue(oResult.isPresent());
+        Assertions.assertEquals(expected, oResult.get());
     }
 
     @ParameterizedTest
     @CsvSource({
             "daniel, simon"
     })
-    void findString2(String expected, String input1, String input2) {
+    void findString2(String input1, String input2) {
         Optional<String> oResult = stringOverlapFinder.find(input1, input2);
         Assertions.assertTrue(oResult.isEmpty());
 

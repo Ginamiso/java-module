@@ -21,7 +21,4 @@ public class Customer {
         this.customerClass = customerClass;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

@@ -15,19 +15,22 @@ class IntegerListSumCalculatorTest {
     void sum() {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
         int expected = 15;
-        Optional<Integer> oResult = sumCalculator.sum(numbers);
+        int oResult = sumCalculator.sum(numbers);
 
-        Assertions.assertTrue(oResult.isPresent());
-        Assertions.assertEquals(expected, oResult.get());
+
+        Assertions.assertEquals(expected, oResult);
 
     }
 
     @Test
-    void sumReturnsOptionalEmpty() {
+    void sumReturnsZero() {
         List<Integer> numbers = List.of();
-        Optional<Integer> oResult = sumCalculator.sum(numbers);
+        int expected = 0;
+        int oResult = sumCalculator.sum(numbers);
 
-        Assertions.assertTrue(oResult.isEmpty());
+        Assertions.assertEquals(expected, oResult);
+
+
 
 
     }
@@ -36,10 +39,10 @@ class IntegerListSumCalculatorTest {
     void sumNegativeNumbers() {
         List<Integer> numbers = List.of(-1, -2, -3, -4, -5);
         int expected = -15;
-        Optional<Integer> oResult = sumCalculator.sum(numbers);
+        int oResult = sumCalculator.sum(numbers);
 
-        Assertions.assertTrue(oResult.isPresent());
-        Assertions.assertEquals(expected, oResult.get());
+
+        Assertions.assertEquals(expected, oResult);
 
     }
 }

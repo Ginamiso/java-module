@@ -14,7 +14,7 @@ public class BiggerSmaller {
 
     public static int getBiggest(List<Integer> numbers) {
         int biggest = numbers.get(0);
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             if (isBigger(number, biggest)) {
                 biggest = number;
             }

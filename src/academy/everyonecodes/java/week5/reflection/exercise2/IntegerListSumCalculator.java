@@ -5,14 +5,11 @@ import java.util.Optional;
 
 public class IntegerListSumCalculator {
 
-    public Optional<Integer> sum(List<Integer> numbers) {
-        if(numbers.isEmpty()){
-            return Optional.empty();
-        }
+    public int sum(List<Integer> numbers) {
         int sum = 0;
         for(int number : numbers){
             sum = sum+number;
         }
-        return Optional.of(sum);
+        return sum;
     }
 }

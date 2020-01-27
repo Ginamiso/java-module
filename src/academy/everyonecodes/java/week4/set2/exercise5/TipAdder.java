@@ -5,9 +5,11 @@ public class TipAdder {
         double tip = bill*0.05;
         double billPlusTip = bill + tip;
         double billPlusTipRoundDown = Math.floor(billPlusTip);
-        double decimals = (billPlusTip - billPlusTipRoundDown)*100;
-        double decimalsRoundDown = Math.floor(decimals);
-        if(decimalsRoundDown < 50){
+        double decimals = (billPlusTip - billPlusTipRoundDown);
+        if(decimals < 0.009){
+            return Math.floor(billPlusTip);
+        }
+        if(decimals <=0.50){
             return billPlusTipRoundDown +0.5;
         }else{
             return Math.ceil(billPlusTip);

@@ -1,2 +1,0 @@
-pair: Sercan
-reviewer: Riccardo

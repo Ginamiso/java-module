@@ -8,10 +8,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ReverserTest {
+    Reverser reverser = new Reverser();
 
     @Test
     void reverse() {
-        Reverser reverser = new Reverser();
+
         List<Integer> input = List.of(1,2,3,4,5,6);
         List<Integer> result = reverser.reverse(input);
         List<Integer> expected = List.of(6,5,4,3,2,1);

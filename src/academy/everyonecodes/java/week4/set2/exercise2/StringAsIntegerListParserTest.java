@@ -19,8 +19,8 @@ class StringAsIntegerListParserTest {
     }
     @Test
     void parse2(){
-        String input = "0;0;0";
-        List<Integer> expected = List.of(0,0,0);
+        String input = "";
+        List<Integer> expected = List.of();
         List<Integer> result = stringAsIntegerListParser.parse(input);
         Assertions.assertEquals(expected, result);
     }

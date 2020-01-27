@@ -1,3 +1,0 @@
-tryShoe
-    shoe1 -> true
-    shoe2 -> false

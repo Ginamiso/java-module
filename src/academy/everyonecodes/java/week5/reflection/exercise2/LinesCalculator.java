@@ -2,28 +2,25 @@ package academy.everyonecodes.java.week5.reflection.exercise2;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 
 public class LinesCalculator {
 
-    public List<String> calculate(String input) {
-        StringToIntegersParser parser = new StringToIntegersParser();
-        List<Integer> numbers = parser.parse(input);
-        IntegerListSumCalculator sumCalculator = new IntegerListSumCalculator();
-        Optional<Integer> sum = sumCalculator.sum(numbers);
-        List<String> sumAsString = new ArrayList<>();
-        if (sum.isPresent()) {
-            int number = sum.get();
-            try {
-                String string = String.valueOf(number);
-                sumAsString.add(string);
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
-                return new ArrayList<>();
-            }
+    StringToIntegersParser parser = new StringToIntegersParser();
+    IntegerListSumCalculator sumCalculator = new IntegerListSumCalculator();
 
+    public List<String> calculate(List<String> input) {
 
+        List<String> sumsAsString = new ArrayList<>();
+
+        for (String string : input) {
+            List<Integer> numbers = parser.parse(string);
+            int sum = sumCalculator.sum(numbers);
+
+            String numberToString = String.valueOf(sum);
+            sumsAsString.add(numberToString);
         }
-        return sumAsString;
+
+        return sumsAsString;
     }
 }

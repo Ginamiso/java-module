@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public class DoubleListMinimumFinder {
     public Optional<Double> find(List<Double> numbers) {
-        if(numbers.size() == 0){
+        if(numbers.isEmpty()){
             return Optional.empty();
         }
         List<Double> copy = new ArrayList<>(numbers);

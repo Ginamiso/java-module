@@ -4,18 +4,19 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class PngCheckerTest {
-    PngChecker2 pngChecker2 = new PngChecker2();
+class PngCheckerTest {
+    PngChecker pngChecker = new PngChecker();
 
     @ParameterizedTest
     @CsvSource({
             "true, casa.png",
             "false, ''",
             "false, casa.jpg",
-            "true, casa.PNG"
+            "true, casa.PNG",
+            "false, ci"
     })
     void check(boolean expected, String input){
-        boolean result = pngChecker2.check(input);
+        boolean result = pngChecker.check(input);
 
         Assertions.assertEquals(expected, result);
     }

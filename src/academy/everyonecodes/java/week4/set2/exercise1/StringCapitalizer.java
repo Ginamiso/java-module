@@ -11,7 +11,7 @@ public class StringCapitalizer {
             return firstLetter + rest;
 
         } else {
-            return "";
+            return word;
         }
     }
 }

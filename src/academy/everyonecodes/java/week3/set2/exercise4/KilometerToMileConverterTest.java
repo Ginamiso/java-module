@@ -10,9 +10,9 @@ class KilometerToMileConverterTest {
 
     @ParameterizedTest
     @CsvSource({
-            "3.106856, 5",
+            "0.62, 1",
             "0,0",
-            "4.53600976,7.3"
+            "1.24, 2"
 
     })
     void convert(double expected, double input){

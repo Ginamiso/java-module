@@ -9,9 +9,9 @@ class PoundToEuroConverterTest {
 
     @ParameterizedTest
     @CsvSource({
-            "1.7,2",
-            "8.5,10 ",
-            "0,0"
+            "1,0.85",
+            "2,1.7",
+            "0,0",
     })
     void convert(double expected, double input) {
         double result = poundToEuroConverter.convert(input);

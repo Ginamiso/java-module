@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-public class OneToTenPickerTest {
+class OneToTenPickerTest {
 
     OneToTenPicker oneToTenPicker = new OneToTenPicker();
 
     @Test
-    void pickReturnsNumberFromList(){
+    void pick(){
          List<Integer> numbers = List.of(1,2,3,4,5,6,7,8,9,10);
          int result = oneToTenPicker.pick();
 

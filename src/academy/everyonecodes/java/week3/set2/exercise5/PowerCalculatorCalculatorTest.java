@@ -4,19 +4,19 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-class PowerCalculatorTest {
+class PowerCalculatorCalculatorTest {
 
     PowerCalculator powerCalculator = new PowerCalculator();
 
     @ParameterizedTest
     @CsvSource({
             "-125,-5,3",
-            "256,256,1",
             "0,0,0",
             "9,3,2",
-            "1,132,0",
+            "1,2,0",
             "0.25, 2, -2",
-            "0.25, -2,-2"
+            "0.25, -2,-2",
+            "0, 0, 4"
     })
     void calculate(double expected, double input, int input2) {
         double result = PowerCalculator.calculate(input, input2);

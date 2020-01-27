@@ -7,6 +7,7 @@ public class Combine {
 
     public static List<String> combine(List<String> first, List<String> second) {
         List<String> combinedElements = new ArrayList<>();
+
         while (first.size() > 0 || second.size() > 0) {
             if (first.size() > 0) {
                 String element = first.get(0);
@@ -24,13 +25,12 @@ public class Combine {
 
     public static void main(String[] args) {
         List<String> firstElements = new ArrayList<>();
-        firstElements.add("dog");
-        firstElements.add("cat");
-        firstElements.add("bird");
+        firstElements.add("one");
+        firstElements.add("three");
+        firstElements.add("five");
         List<String> secondElements = new ArrayList<>();
-        secondElements.add("table");
-        secondElements.add("chair");
-        secondElements.add("chair");
+        secondElements.add("two");
+        secondElements.add("four");
         List<String> combinedElements = combine(firstElements, secondElements);
         for (String element : combinedElements) {
             System.out.println(element);

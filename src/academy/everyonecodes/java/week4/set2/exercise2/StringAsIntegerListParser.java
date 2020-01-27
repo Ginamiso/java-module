@@ -5,6 +5,9 @@ import java.util.List;
 
 public class StringAsIntegerListParser {
     public List<Integer> parse(String numbers) {
+        if(numbers.isEmpty()){
+            return List.of();
+        }
         List<String> listOfStrings = List.of(numbers.split(";"));
         List<Integer> listOfIntegers = new ArrayList<>();
         for(String number : listOfStrings){

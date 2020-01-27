@@ -24,7 +24,7 @@ class LineSumCalculatorTest {
     }
     @Test
     void calculate3(){
-        String input = "0;0;0";
+        String input = "0";
         int expected = 0;
         int result = lineSumCalculator.calculate(input);
 

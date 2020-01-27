@@ -8,16 +8,20 @@ import java.util.Optional;
 public class StringOverlapFinder {
 
 
-    public Optional<String> find(String name1, String name2) {
-        int length = name2.length();
-        while(length >= 1){
-            if(name1.contains(name2.substring(0,length))){
-                String overlap = name2.substring(0,length);
-                return Optional.of(overlap);
-            }else{
-                length--;
+    public Optional<String> find(String first, String second) {
+        if (first.isEmpty() || second.isEmpty()) {
+            return Optional.empty();
+        }
+        int length = first.length();
+        int lastIndex = length - 1;
+        for (int position = lastIndex; position >= 0; position--) {
+            String partToTest = first.substring(position, length);
+            if (second.startsWith(partToTest)) {
+                return Optional.of(partToTest);
             }
         }
         return Optional.empty();
     }
 }
+
+

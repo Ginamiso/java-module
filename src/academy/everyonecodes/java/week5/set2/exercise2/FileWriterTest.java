@@ -12,7 +12,7 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
-public class FileWriterTest {
+class FileWriterTest {
 
     FileWriter fileWriter = new FileWriter();
     FileReader reader = new FileReader();

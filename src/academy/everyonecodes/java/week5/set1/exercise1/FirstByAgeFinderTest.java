@@ -21,14 +21,12 @@ class FirstByAgeFinderTest {
         int age = 27;
 
         Optional<Person> oResult = firstByAgeFinder.find(input, age);
-       if(oResult.isPresent()){
-           Person result = oResult.get();
-           Assertions.assertEquals(person2.getAge(), result.getAge());
+
+        Person result = oResult.get();
+        Assertions.assertEquals(person2.getAge(), result.getAge());
        }
 
 
-
-    }
 
     @Test
     void find2() {
@@ -61,5 +59,14 @@ class FirstByAgeFinderTest {
 
         Assertions.assertEquals(person1.getAge(), result.getAge());
 
+    }@Test
+    void findReturnsEmptyOptionalForEmptyList() {
+        List<Person> people = List.of();
+        int ageToFind = 21;
+
+        Optional<Person> result = firstByAgeFinder.find(people, ageToFind);
+
+        Assertions.assertTrue(result.isEmpty());
     }
+
 }
