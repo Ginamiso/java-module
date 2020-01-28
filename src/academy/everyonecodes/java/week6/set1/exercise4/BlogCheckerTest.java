@@ -2,7 +2,6 @@ package academy.everyonecodes.java.week6.set1.exercise4;
 
 import academy.everyonecodes.java.week6.set1.exercise3.Blog;
 import academy.everyonecodes.java.week6.set1.exercise3.Date;
-import academy.everyonecodes.java.week6.set1.exercise3.Post;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -15,11 +14,8 @@ class BlogCheckerTest {
 
     @Test
     void hasBlog(){
-        Date dateOfBlog = new Date(3, 4, 2020);
-        Date dateOfPost = new Date(2, 1, 2020);
-        Post post1 = new Post("This post", "amazing", dateOfPost, false);
-        Post post2 = new Post("other Post", "wow", dateOfPost, true);
-        Blog blog = new Blog ("This Blog", List.of(post1, post2), dateOfBlog);
+        Date date = new Date(3, 4, 2020);
+        Blog blog = new Blog ("This Blog", List.of(), date);
         Website input = new Website("www.blabla.com", "chachacha", Optional.of(blog));
         boolean result = blogChecker.hasBlog(input);
 

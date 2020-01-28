@@ -4,31 +4,23 @@ import academy.everyonecodes.java.week6.set1.exercise1.Customer;
 import academy.everyonecodes.java.week6.set1.exercise1.CustomerUpgrader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class CustomerUpgraderTest {
 
     CustomerUpgrader customerUpgrader = new CustomerUpgrader();
 
-    @Test
-    void upgradeToBusinessClass(){
-        Customer input = new Customer("jake", "economy");
-        Customer result = customerUpgrader.upgrade(input);
+    @ParameterizedTest
+    @CsvSource({
+            "business, Jake, economy",
+            "business, Paul, business"
+    })
+    void upgrade(String expected, String name, String customerClass){
 
-        Customer expected = new Customer("jake", "business");
+        Customer customer = new Customer(name, customerClass);
+        customerUpgrader.upgrade(customer);
 
-
-        Assertions.assertEquals(expected.getCustomerClass(), result.getCustomerClass());
-
-    }
-    @Test
-    void upgradeToBusinessClassCornerCase(){
-        Customer input = new Customer("jake", "business");
-        Customer result = customerUpgrader.upgrade(input);
-
-        Customer expected = new Customer("jake", "business");
-
-
-        Assertions.assertEquals(expected.getCustomerClass(), result.getCustomerClass());
-
+        Assertions.assertEquals(expected, customer.getCustomerClass());
     }
 }

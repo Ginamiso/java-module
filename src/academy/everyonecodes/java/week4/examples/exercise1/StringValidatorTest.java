@@ -10,8 +10,9 @@ public class StringValidatorTest {
     @ParameterizedTest
     @CsvSource({
             "true, casa",
-            "false, ' '",
-            "false, mam ma"
+            "false, ''",
+            "false, '    '",
+            "true, something else"
     })
     void validate(boolean expected, String input){
         boolean result = stringValidator.validate(input);

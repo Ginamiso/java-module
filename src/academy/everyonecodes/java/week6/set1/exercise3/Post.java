@@ -6,7 +6,7 @@ public class Post {
     private Date dateCreated;
     private boolean isPublished;
 
-    public Post(String title, String content, Date dateCreated, boolean isPublished){
+    public Post(String title, String content, Date dateCreated, boolean isPublished) {
         this.title = title;
         this.content = content;
         this.dateCreated = dateCreated;
