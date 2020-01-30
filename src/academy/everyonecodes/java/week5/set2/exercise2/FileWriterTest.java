@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 class FileWriterTest {
@@ -21,19 +20,17 @@ class FileWriterTest {
     @Test
 
     void write(){
-        List<String> inputs = List.of("Line 1", "Line 2", "Line 3");
+        List<String> input = List.of("Line 1", "Line 2", "Line 3");
 
-        fileWriter.write(contentRootPath, inputs);
+        fileWriter.write(contentRootPath, input);
         List<String> result = reader.read(contentRootPath);
 
-        List<String> expected = List.of("Line 1", "Line 2", "Line 3");
-
-        Assertions.assertEquals(expected, result);
+        Assertions.assertEquals(input, result);
 
 
     }
     @Test
-    void writeAppends(){
+    void append(){
         List<String> first = List.of("Line 1", "Line 2", "Line 3");
         List<String> second = List.of("Jam", "Sugar", "Coffee");
 

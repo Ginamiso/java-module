@@ -8,8 +8,8 @@ import java.util.List;
 
 public class FileReader {
 
-    public List<String> read(String file){
-        Path path = Path.of(file);
+    public List<String> read(String fileLocation){
+        Path path = Path.of(fileLocation);
         try{
             return Files.readAllLines(path);
         }catch (IOException e){
