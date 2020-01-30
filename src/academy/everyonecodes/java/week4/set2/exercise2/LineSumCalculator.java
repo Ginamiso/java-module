@@ -1,7 +1,5 @@
 package academy.everyonecodes.java.week4.set2.exercise2;
 
-import academy.everyonecodes.java.week1.set1.exercise2.Sum;
-
 import java.util.List;
 
 public class LineSumCalculator {

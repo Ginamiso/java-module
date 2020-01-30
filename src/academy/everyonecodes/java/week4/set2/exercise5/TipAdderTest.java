@@ -14,7 +14,8 @@ class TipAdderTest {
             "5.5, 4.9",
             "105, 100",
             "10.5, 10",
-            "100, 95.24"
+            "100, 95.24",
+            "0,0"
     })
     void add(double expected, double input){
         double result = tipAdder.add(input);
