@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.week5.importedClasses;
+package academy.everyonecodes.java.evaluation1.importedClasses;
 
 
 import org.junit.jupiter.api.AfterEach;
