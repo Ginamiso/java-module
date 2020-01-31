@@ -1,9 +1,7 @@
 package academy.everyonecodes.java.week5.set2.exercise5;
 
-import academy.everyonecodes.java.week5.set2.exercise2.FileWriter;
+import academy.everyonecodes.java.week5.importedClasses.FileWriter;
 
-import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;

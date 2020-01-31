@@ -1,6 +1,6 @@
 package academy.everyonecodes.java.week5.set2.exercise3;
 
-import academy.everyonecodes.java.week5.set2.exercise1.FileReader;
+import academy.everyonecodes.java.week5.importedClasses.FileReader;
 
 import java.util.List;
 

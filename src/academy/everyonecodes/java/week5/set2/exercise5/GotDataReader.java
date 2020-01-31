@@ -1,9 +1,5 @@
 package academy.everyonecodes.java.week5.set2.exercise5;
 
-import academy.everyonecodes.java.week5.set2.exercise1.FileReader;
-import academy.everyonecodes.java.week5.set2.exercise4.HappinessDataParser;
-import academy.everyonecodes.java.week5.set2.exercise4.HappinessRecord;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

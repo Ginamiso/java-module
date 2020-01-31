@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DigitSumCalculator {
 
-    IntegerListSumCalculator calculator = new IntegerListSumCalculator();
+    private IntegerListSumCalculator calculator = new IntegerListSumCalculator();
 
     public int calculate(int number) {
         String numberAsString = String.valueOf(number);

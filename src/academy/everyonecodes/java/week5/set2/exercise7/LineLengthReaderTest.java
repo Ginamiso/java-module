@@ -1,6 +1,5 @@
 package academy.everyonecodes.java.week5.set2.exercise7;
 
-import academy.everyonecodes.java.week5.set2.exercise1.FileReader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

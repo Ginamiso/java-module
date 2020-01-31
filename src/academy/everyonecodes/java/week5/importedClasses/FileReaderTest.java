@@ -1,4 +1,4 @@
-package academy.everyonecodes.java.week5.set2.exercise1;
+package academy.everyonecodes.java.week5.importedClasses;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
