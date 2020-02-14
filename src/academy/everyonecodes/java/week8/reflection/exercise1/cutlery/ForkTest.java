@@ -21,7 +21,7 @@ class ForkTest {
             "true, Fish",
             "true, Pizza",
             "true, pasta",
-            "false, Soup"
+            "false, ''"
     })
     void isUsedFor(boolean expected, String input) {
         boolean result = fork.isUsedFor(input);

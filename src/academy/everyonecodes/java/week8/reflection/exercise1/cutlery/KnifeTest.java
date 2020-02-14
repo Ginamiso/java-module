@@ -21,7 +21,7 @@ class KnifeTest {
     @CsvSource({
             "true, Fish",
             "true, pizza",
-            "false, Pasta"
+            "false, ''"
     })
     void isUsedFor(boolean expected, String input) {
         boolean result = knife.isUsedFor(input);

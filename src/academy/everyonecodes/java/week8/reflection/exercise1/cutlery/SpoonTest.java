@@ -22,7 +22,7 @@ class SpoonTest {
     @CsvSource({
             "true, Soup",
             "true, soup",
-            "false, Fish"
+            "false, ''"
     })
     void isUsedFor(boolean expected, String input) {
         boolean result = spoon.isUsedFor(input);
