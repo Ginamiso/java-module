@@ -9,9 +9,9 @@ public class Application {
         DayOfWeek currentDay = weeklyCalendar.askForDayOfWeek();
         MonthlyCalendar monthlyCalendar = new MonthlyCalendar();
         Month currentMonth = monthlyCalendar.askForMonth();
-        Mirror mirror = new Mirror();
         Drawer drawer = new Drawer();
         Outfit outfit = drawer.getOutfitForToday(currentMonth, currentDay);
+        Mirror mirror = new Mirror();
         mirror.sayHowItLooks(currentDay, currentMonth, outfit);
     }
 }

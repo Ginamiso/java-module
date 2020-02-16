@@ -1,0 +1,9 @@
+getOutfitForToday
+
+Monday, November -> Headpiece.BEANIE, Socks.REDSOCKS
+Tuesday, December -> Headpiece.BEANIE, Socks.YELLOWSOCKS
+Saturday, January -> Headpiece.BEANIE, Socks.GREENSOCKS
+
+Monday, March -> Headpiece.HAT, Socks.GREENSOCKS
+Wednesday, April -> Headpiece.HAT, Socks.YELLOWSOCKS
+Sunday, June -> Headpiece.HAT, Socks.GREENSOCKS

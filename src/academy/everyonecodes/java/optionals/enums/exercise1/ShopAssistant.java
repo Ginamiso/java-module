@@ -36,13 +36,9 @@ public class ShopAssistant {
         List<TShirt> sameSizeTShirts = findShirtsThatFit(size);
         if (sameSizeTShirts.size() == 0) {
             System.out.println("I'm sorry, we have no shirts available for your size.");
-        } else {
-            for (TShirt tShirt : sameSizeTShirts) {
-                System.out.println("We have a " + tShirt.getColor() + " shirt for " + tShirt.getPrice() + " euro.");
-
-            }
-
-
+        }
+        for (TShirt tShirt : sameSizeTShirts) {
+            System.out.println("We have a " + tShirt.getColor() + " shirt for " + tShirt.getPrice() + " euro.");
         }
     }
 }

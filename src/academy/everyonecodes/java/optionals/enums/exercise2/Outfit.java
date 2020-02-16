@@ -1,19 +1,18 @@
 package academy.everyonecodes.java.optionals.enums.exercise2;
 
-import jdk.jfr.Description;
 
 public class Outfit {
-    private Socks sock;
-    private HeadPiece headPiece;
+    private Socks socks;
+    private Headpiece headpiece;
 
-    public Outfit(Socks sock, HeadPiece headPiece){
-        this.sock = sock;
-        this.headPiece = headPiece;
+    public Outfit(Socks socks, Headpiece headpiece){
+        this.socks = socks;
+        this.headpiece = headpiece;
     }
     public String getDescription(){
-        String sockDescription = sock.getDescription();
-        String headDescription = headPiece.getDescription();
-        return  headDescription +" hat and "+ sockDescription;
+        String socksDescription = socks.getDescription();
+        String headDescription = headpiece.getDescription();
+        return  headDescription +" and "+ socksDescription;
 
     }
 

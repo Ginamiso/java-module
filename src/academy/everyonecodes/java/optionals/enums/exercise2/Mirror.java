@@ -5,6 +5,6 @@ import java.time.Month;
 
 public class Mirror {
     public void sayHowItLooks(DayOfWeek day, Month month, Outfit outfit){
-        System.out.println("On a "+day+" in "+month+" Hansel is wearing a "+outfit.getDescription());
+        System.out.println("On a "+day.name()+" in "+month.name()+" Hansel is wearing a "+outfit.getDescription()+".");
     }
 }
