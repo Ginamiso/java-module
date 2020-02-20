@@ -1,10 +1,11 @@
 package academy.everyonecodes.java.optionals.arrays.exercise1;
 import java.util.Scanner;
+
 public class AirlineTerminal {
     private String[] getItems(){
         String[] items = new String[5];
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please tell me your 5 items");
+        System.out.println("Please tell me your " +items.length+ " items");
         for(int i = 0; i<items.length; i++){
             items[i] = scanner.nextLine().toLowerCase();
         }
@@ -28,6 +29,5 @@ public class AirlineTerminal {
         }else{
             System.out.println("All items are good to go. Enjoy your flight!");
         }
-
     }
 }
