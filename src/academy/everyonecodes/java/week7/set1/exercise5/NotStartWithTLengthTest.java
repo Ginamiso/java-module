@@ -13,7 +13,7 @@ public class NotStartWithTLengthTest {
         Stream<String> names = Stream.of("Hello", "there", "General", "Kenobi");
 
         List<Integer> result = names.filter(name -> !name.startsWith("t"))
-                .map(name -> name.length())
+                .map(String::length)
                 .collect(Collectors.toList());
         List<Integer> expected = List.of(5,7,6);
 

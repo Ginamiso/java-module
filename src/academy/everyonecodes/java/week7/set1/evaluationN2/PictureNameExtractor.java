@@ -2,7 +2,6 @@ package academy.everyonecodes.java.week7.set1.evaluationN2;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PictureNameExtractor {
     public List<String> extract(List<String> files) {

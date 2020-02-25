@@ -15,6 +15,7 @@ public abstract class Move {
         this.defeated = defeated;
     }
     public boolean defeats(Move move){
-        return defeated.equalsIgnoreCase(move.getName());
+        return defeated.contains(move.getName());
     }
+
 }

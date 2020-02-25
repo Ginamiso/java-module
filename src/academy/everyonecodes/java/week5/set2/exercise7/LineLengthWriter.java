@@ -1,6 +1,6 @@
 package academy.everyonecodes.java.week5.set2.exercise7;
 
-import academy.everyonecodes.java.week5.importedClasses.FileWriter;
+import academy.everyonecodes.java.evaluation1.importedClasses.FileWriter;
 
 import java.util.List;
 

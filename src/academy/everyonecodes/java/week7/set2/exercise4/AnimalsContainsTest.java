@@ -1,7 +1,6 @@
 package academy.everyonecodes.java.week7.set2.exercise4;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -9,9 +8,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AnimalsContainsTest {
+
     StreamFileReader reader = new StreamFileReader();
     FileAppender appender = new FileAppender();
 
@@ -21,28 +22,28 @@ public class AnimalsContainsTest {
 
     @Test
     void test() {
-        Stream<String> lines = reader.readLines(contentRootPath);
-        lines.filter(name -> name.contains("s") || name.contains("S"))
+        reader.readLines(contentRootPath)
+                .filter(name -> name.contains("s") || name.contains("S"))
                 .map(String::toUpperCase)
                 .forEach(name -> appender.append(output, name));
 
-        Stream<String> expected = reader.readLines(expectedPath);
-        Stream<String> result = reader.readLines(output);
+        List<String> expected = reader.readLines(expectedPath)
+                .collect(Collectors.toList());
+        List<String> result = reader.readLines(output)
+                .collect(Collectors.toList());
 
-        List<String> expectedList = expected.collect(Collectors.toList());
-        List<String> resultList = result.collect(Collectors.toList());
 
-        Assertions.assertEquals(expectedList, resultList);
+        assertEquals(expected, result);
     }
 
-        @AfterEach
-        void delete() {
-            Path path = Path.of(output);
-            try {
-                Files.deleteIfExists(path);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    @AfterEach
+    void deleteFile() {
+        Path path = Path.of(output);
+        try {
+            Files.deleteIfExists(path);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
+}
 

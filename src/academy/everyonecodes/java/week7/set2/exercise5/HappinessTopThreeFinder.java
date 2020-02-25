@@ -8,16 +8,15 @@ import java.util.stream.Collectors;
 
 public class HappinessTopThreeFinder {
 
-    public List<String> findTopThree(){
+    private HappinessDataReader reader = new HappinessDataReader();
 
-        HappinessDataReader reader = new HappinessDataReader();
-        List<HappinessRecord> records = reader.read();
+    public List<String> findTopThree() {
 
-        List<String> topThree = records.stream()
+        return reader.read().stream()
                 .sorted(Comparator.comparing(HappinessRecord::getRank))
                 .limit(3)
-                .map(HappinessRecord -> "Country: " + HappinessRecord.getCountry() + " Score: "+ HappinessRecord.getScore())
+                .map(HappinessRecord -> "Country: " + HappinessRecord.getCountry() + " Score: " + HappinessRecord.getScore())
                 .collect(Collectors.toList());
-        return topThree;
+
     }
 }

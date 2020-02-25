@@ -22,7 +22,7 @@ public class Discount {
     public double apply(List<Product> products) {
         return products.stream()
                 .filter(product -> applicableProductNames.contains(product.getName()))
-                .map(product -> product.getPrice() * (discountPercentage / 100.0))
-                .reduce(0.0, Double::sum);
+                .mapToDouble(product -> product.getPrice() * (discountPercentage / 100.0))
+                .sum();
     }
 }

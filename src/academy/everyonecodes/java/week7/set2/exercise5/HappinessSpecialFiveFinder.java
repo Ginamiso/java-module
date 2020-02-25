@@ -13,11 +13,10 @@ public class HappinessSpecialFiveFinder {
 
         List<String> specialFive = records.stream()
                 .sorted(Comparator.comparing(HappinessRecord::getRank).reversed())
-                .filter(country -> country.getCountry().contains("a"))
-                .filter(country -> country.getCountry().length() > 9)
+                .filter(country -> country.getCountry().contains("a")&&country.getCountry().length() > 9)
                 .limit(5)
                 .sorted(Comparator.comparing(HappinessRecord::getRank))
-                .map(HappinessRecord -> "Country: "+HappinessRecord.getCountry() + " Rank: "+HappinessRecord.getRank())
+                .map(country -> "Country: "+country.getCountry() + " Rank: "+country.getRank())
                 .collect(Collectors.toList());
 
         return specialFive;

@@ -9,11 +9,10 @@ import java.util.List;
 import java.util.stream.Stream;
 
 class DiscountTest {
-    Discount discount = new Discount(5, List.of("wine", "tomato"));
 
     @ParameterizedTest
     @MethodSource("parameters")
-    void apply(double expected, List<Product> input) {
+    void apply(double expected, Discount discount, List<Product> input) {
         double result = discount.apply(input);
 
         Assertions.assertEquals(expected, result);
@@ -24,9 +23,9 @@ class DiscountTest {
         List<Product> vegetables = List.of(new Product("tomato", 10), new Product("wine", 5));
         List<Product> empty = List.of();
         return Stream.of(
-                Arguments.of(0.25, wine),
-                Arguments.of(0.75, vegetables),
-                Arguments.of(0.0, empty)
+                Arguments.of(0.25, new Discount(5, List.of("wine")), wine),
+                Arguments.of(0.7000000000000001, new Discount (7, List.of("tomato")), vegetables),
+                Arguments.of(0.0, new Discount(5, List.of("wine")), empty)
         );
     }
 }

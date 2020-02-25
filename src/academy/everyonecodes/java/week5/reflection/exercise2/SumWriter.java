@@ -1,7 +1,7 @@
 package academy.everyonecodes.java.week5.reflection.exercise2;
 
-import academy.everyonecodes.java.week5.importedClasses.FileReader;
-import academy.everyonecodes.java.week5.importedClasses.FileWriter;
+import academy.everyonecodes.java.evaluation1.importedClasses.FileReader;
+import academy.everyonecodes.java.evaluation1.importedClasses.FileWriter;
 
 import java.util.List;
 

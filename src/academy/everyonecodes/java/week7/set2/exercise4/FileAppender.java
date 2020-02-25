@@ -1,5 +1,6 @@
 package academy.everyonecodes.java.week7.set2.exercise4;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -11,7 +12,7 @@ public class FileAppender {
         List<String> lines = List.of(line);
         try {
             Files.write(path, lines, StandardOpenOption.APPEND, StandardOpenOption.CREATE);
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

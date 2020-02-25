@@ -10,8 +10,8 @@ public class RoundDownToAbsoluteBiggerThan1Test {
     @Test
     void test(){
         Stream<Double> doubles = Stream.of(1.5, -1.8, 3.5);
-        Optional<Double> result = doubles.map(number -> Math.floor(number))
-                .map(number -> Math.abs(number))
+        Optional<Double> result = doubles.map(Math::floor)
+                .map(Math::abs)
                 .filter(number -> number >1)
                 .findFirst();
 

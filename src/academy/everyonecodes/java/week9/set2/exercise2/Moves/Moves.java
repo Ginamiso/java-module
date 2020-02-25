@@ -5,6 +5,6 @@ import java.util.List;
 public class Moves {
 
     public static List<Move> get() {
-        return List.of(new Rock(), new Scissors(), new Paper());
+        return List.of(new Rock(), new Scissors(), new Paper(), new Spock(), new Lizard());
     }
 }

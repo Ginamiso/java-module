@@ -19,13 +19,15 @@ class TotalDiscountCalculatorTest {
     }
 
     private static Stream<Arguments> parameters() {
-        List<Product> products = List.of(new Product("wine", 6.5), new Product("tomato", 2));
-        List<Product> other = List.of(new Product("chocolate", 4), new Product("cucumber", 3));
-        List<Product> empty = List.of(new Product("banana", 5));
+        List<Product> singleProduct = List.of(new Product("wine", 6.5));
+        List<Product> products = List.of(new Product("chocolate", 4), new Product("cucumber", 3));
+        List<Product> noDiscount = List.of(new Product("banana", 5));
+        List<Product> empty = List.of();
         return Stream.of(
-                Arguments.of(7.975, products),
-                Arguments.of(6.42, other),
-                Arguments.of(5.0, empty)
+                Arguments.of(6.42, products),
+                Arguments.of(6.175, singleProduct),
+                Arguments.of(5.0, noDiscount),
+                Arguments.of(0.0, empty)
         );
     }
 }

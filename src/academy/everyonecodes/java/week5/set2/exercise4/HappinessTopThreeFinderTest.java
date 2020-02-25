@@ -9,7 +9,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HappinessScoreFinderTest {
+class HappinessTopThreeFinderTest {
     HappinessScoreFinder happinessScoreFinder = new HappinessScoreFinder();
 
 

@@ -40,7 +40,6 @@ class TotalDeathCounterTest {
 
         List<Character> input = List.of();
         Optional<Integer> oResult = totalDeathCounter.count(input);
-        Optional<Integer> expected = Optional.empty();
 
         Assertions.assertTrue(oResult.isEmpty());
     }

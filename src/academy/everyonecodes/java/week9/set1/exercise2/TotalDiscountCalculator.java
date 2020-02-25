@@ -6,14 +6,20 @@ public class TotalDiscountCalculator {
     private List<Discount> discounts = Discounts.get();
 
     public double calculate(List<Product> products) {
-        double totalDiscount = discounts.stream()
-                .map(discount -> discount.apply(products))
-                .reduce(0.0, Double::sum);
+        double totalDiscount = calculateDiscount(products);
+        double totalPrice = calculateTotal(products);
+        return totalPrice - totalDiscount;
+    }
 
-        double totalPrice = products.stream()
+    private Double calculateTotal(List<Product> products) {
+        return products.stream()
                 .map(Product::getPrice)
                 .reduce(0.0, Double::sum);
+    }
 
-        return totalPrice - totalDiscount;
+    private Double calculateDiscount(List<Product> products) {
+        return discounts.stream()
+                .map(discount -> discount.apply(products))
+                .reduce(0.0, Double::sum);
     }
 }

@@ -7,7 +7,6 @@ import academy.everyonecodes.java.week7.set2.exercise4.StreamFileReader;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class HappinessDataReader {
 
@@ -15,14 +14,13 @@ public class HappinessDataReader {
     private StreamFileReader reader = new StreamFileReader();
     private String contentRootPath = "src/academy/everyonecodes/java/week7/set2/files/world-happiness-2017 (1).csv";
 
-    public List<HappinessRecord> read(){
-        Stream<String> lines = reader.readLines(contentRootPath);
-        List<HappinessRecord> happinessRecord = lines.skip(1)
-                .map(line -> parser.parseLine(line))
+    public List<HappinessRecord> read() {
+        return reader.readLines(contentRootPath)
+                .skip(1)
+                .map(parser::parseLine)
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .collect(Collectors.toList());
 
-        return happinessRecord;
     }
 }

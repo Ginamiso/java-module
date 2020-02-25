@@ -1,9 +1,6 @@
 package academy.everyonecodes.java.week9.set2.exercise2;
 
-import academy.everyonecodes.java.week9.set2.exercise2.Moves.Move;
-import academy.everyonecodes.java.week9.set2.exercise2.Moves.Paper;
-import academy.everyonecodes.java.week9.set2.exercise2.Moves.Rock;
-import academy.everyonecodes.java.week9.set2.exercise2.Moves.Scissors;
+import academy.everyonecodes.java.week9.set2.exercise2.Moves.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -34,7 +31,14 @@ class DecisionMakerTest {
                 Arguments.of("Player 1 wins", new Paper(), new Rock()),
                 Arguments.of("Player 2 wins", new Rock(), new Paper()),
                 Arguments.of("Player 2 wins", new Scissors(), new Rock()),
-                Arguments.of("Player 2 wins", new Paper(), new Scissors())
+                Arguments.of("Player 2 wins", new Paper(), new Scissors()),
+                Arguments.of("Player 1 wins", new Rock(), new Lizard()),
+                Arguments.of("Player 1 wins", new Scissors(), new Lizard()),
+                Arguments.of("Player 1 wins", new Paper(), new Spock()),
+                Arguments.of("Player 1 wins", new Lizard(), new Spock()),
+                Arguments.of("Player 1 wins", new Lizard(), new Paper()),
+                Arguments.of("Nobody wins", new Lizard(), new Lizard()),
+                Arguments.of("Nobody wins", new Spock(), new Spock())
         );
     }
 }

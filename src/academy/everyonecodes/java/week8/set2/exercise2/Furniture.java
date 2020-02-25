@@ -10,7 +10,6 @@ public class Furniture {
 
     public Furniture(String name) {
         this.name = name;
-        parts = new ArrayList<>();
     }
 
     public String getName() {

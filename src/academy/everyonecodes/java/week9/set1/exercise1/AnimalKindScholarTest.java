@@ -25,7 +25,8 @@ class AnimalKindScholarTest {
         return Stream.of(
                 Arguments.of("mammal","dog"),
                 Arguments.of("", "cat"),
-                Arguments.of("dog,gorilla", "mammal")
+                Arguments.of("dog,gorilla", "mammal"),
+                Arguments.of("", "")
         );
     }
 }

@@ -1,9 +1,10 @@
 package academy.everyonecodes.java.week7.set2.exercise1;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class NegativeTimesNegative2BiggerThan5Test {
     @Test
@@ -18,7 +19,7 @@ public class NegativeTimesNegative2BiggerThan5Test {
 
         long expected = 2;
 
-        Assertions.assertEquals(expected, result);
+        assertEquals(expected, result);
 
     }
 }

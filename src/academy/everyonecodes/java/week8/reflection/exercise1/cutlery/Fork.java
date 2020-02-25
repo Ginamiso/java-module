@@ -8,9 +8,6 @@ public class Fork implements Cutlery {
 
     @Override
     public boolean isUsedFor(String dish) {
-        if (dish.equalsIgnoreCase("Fish") || dish.equalsIgnoreCase("Pizza") || dish.equalsIgnoreCase("Pasta")) {
-            return true;
+        return (dish.equalsIgnoreCase("Fish") || dish.equalsIgnoreCase("Pizza") || dish.equalsIgnoreCase("Pasta")) ;
         }
-        return false;
     }
-}

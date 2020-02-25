@@ -27,14 +27,14 @@ class FileAppenderTest {
         fileAppender.append(contentRootPath, line);
         fileAppender.append(contentRootPath, line2);
 
-        Stream<String> result = streamFileReader.readLines(contentRootPath);
-        List<String> list = result.collect(Collectors.toList());
+        List<String> result = streamFileReader.readLines(contentRootPath)
+        .collect(Collectors.toList());
 
-        Assertions.assertEquals(expected, list);
+        Assertions.assertEquals(expected, result);
 
     }
     @AfterEach
-    void deleteNewAnimalsFile() {
+    void deleteFile() {
         Path path = Path.of(contentRootPath);
         try {
             Files.deleteIfExists(path);
