@@ -26,7 +26,7 @@ public class BasicDictionary {
         List.of(text.split(" ")).stream()
                 .map(String::toLowerCase)
                 .filter(word -> !dictionary.contains(word) && !word.isBlank())
-                .forEach(word -> unknownWords.add(word));
+                .forEach(unknownWords::add);
         return new ArrayList<>(unknownWords);
     }
 }
