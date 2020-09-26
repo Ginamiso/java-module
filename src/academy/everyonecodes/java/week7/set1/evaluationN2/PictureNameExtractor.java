@@ -5,11 +5,10 @@ import java.util.stream.Collectors;
 
 public class PictureNameExtractor {
     public List<String> extract(List<String> files) {
-        List<String> result = files.stream()
+        return files.stream()
                 .map(name -> name.substring(8, name.length() -7))
-                .map(name -> name.toLowerCase())
+                .map(String::toLowerCase)
                 .map(name-> name.replaceAll("-", " "))
                 .collect(Collectors.toList());
-        return result;
     }
 }

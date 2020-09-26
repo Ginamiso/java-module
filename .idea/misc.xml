@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/exercise2/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/exercise5/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week1/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise6/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise7/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise8/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/exercise9/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week2/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/exercise5/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/exercise7/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/exercise9/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/exercise10/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week3/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise2/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise4/marco/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise4/polo/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week4/exercise5/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week6/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week6/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week6/exercise5/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week6/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week7/exercise2/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week7/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week7/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week7/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise2/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise6/marco/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise6/polo/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week8/exercise7/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week9/exercise1/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week9/exercise2/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week1/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week1/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week1/exercise7/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week1/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise3/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise4/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise5/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise7/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise8/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/exercise9/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backend2/week2/reflection/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week5/exercise1/hot-right-now/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week5/exercise1/recommendations/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week5/exercise1/tailored-recommendations/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week5/evaluation/users/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/week5/evaluation/basket/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/drHouse/admission/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/drHouse/diagnosis/pom.xml" />
+        <option value="$PROJECT_DIR$/src/academy/everyonecodes/java/gitIgnore/backendmodule/drHouse/treatments/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

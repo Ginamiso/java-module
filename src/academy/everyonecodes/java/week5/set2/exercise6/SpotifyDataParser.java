@@ -10,7 +10,7 @@ public class SpotifyDataParser {
         String rankString = song.get(0);
         String artist = song.get(2);
         try {
-            int rank = Integer.valueOf(rankString);
+            int rank = Integer.parseInt(rankString);
             Song songObject = new Song(title, rank, artist);
             return Optional.of(songObject);
         } catch (NumberFormatException e) {

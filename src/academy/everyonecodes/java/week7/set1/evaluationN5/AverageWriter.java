@@ -4,24 +4,22 @@ import academy.everyonecodes.java.evaluation1.importedClasses.FileReader;
 import academy.everyonecodes.java.evaluation1.importedClasses.FileWriter;
 import academy.everyonecodes.java.evaluation1.importedClasses.StringToIntegersParser;
 
-
-import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class AverageWriter {
-    private FileReader reader = new FileReader();
-    private FileWriter writer = new FileWriter();
-    private StringToIntegersParser parser = new StringToIntegersParser();
+    private final FileReader reader = new FileReader();
+    private final FileWriter writer = new FileWriter();
+    private final StringToIntegersParser parser = new StringToIntegersParser();
 
     public void write(String inputPath, String outputPath) {
 
 
         List<String> lines = reader.read(inputPath);
         List<String> averageLines = lines.stream()
-                .map(line -> parser.parse(line))
-                .map(line -> getAverage(line))
-                .map(number -> String.valueOf(number))
+                .map(parser::parse)
+                .map(this::getAverage)
+                .map(String::valueOf)
                 .collect(Collectors.toList());
 
         writer.write(outputPath, averageLines);
@@ -33,7 +31,6 @@ public class AverageWriter {
         for (int number : numbers) {
             sum += number;
         }
-        double average = sum / numbers.size();
-        return average;
+        return sum / numbers.size();
     }
 }

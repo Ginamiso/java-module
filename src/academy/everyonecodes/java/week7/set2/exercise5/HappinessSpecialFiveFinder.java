@@ -7,19 +7,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class HappinessSpecialFiveFinder {
+
     HappinessDataReader reader = new HappinessDataReader();
+
     public List<String> find() {
         List<HappinessRecord> records = reader.read();
-
-        List<String> specialFive = records.stream()
+        return records.stream()
                 .sorted(Comparator.comparing(HappinessRecord::getRank).reversed())
-                .filter(country -> country.getCountry().contains("a")&&country.getCountry().length() > 9)
+                .filter(country -> country.getCountry().contains("a") && country.getCountry().length() > 9)
                 .limit(5)
                 .sorted(Comparator.comparing(HappinessRecord::getRank))
-                .map(country -> "Country: "+country.getCountry() + " Rank: "+country.getRank())
+                .map(country -> "Country: " + country.getCountry() + " Rank: " + country.getRank())
                 .collect(Collectors.toList());
-
-        return specialFive;
 
     }
 }

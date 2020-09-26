@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
 
 public class HappinessDataReader {
 
-    private HappinessDataParser parser = new HappinessDataParser();
-    private StreamFileReader reader = new StreamFileReader();
-    private String contentRootPath = "src/academy/everyonecodes/java/week7/set2/files/world-happiness-2017 (1).csv";
+    private final HappinessDataParser parser = new HappinessDataParser();
+    private final StreamFileReader reader = new StreamFileReader();
+    private final String contentRootPath = "src/academy/everyonecodes/java/week7/set2/files/world-happiness-2017 (1).csv";
 
     public List<HappinessRecord> read() {
         return reader.readLines(contentRootPath)

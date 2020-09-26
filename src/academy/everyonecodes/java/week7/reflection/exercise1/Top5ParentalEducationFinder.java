@@ -14,7 +14,7 @@ public class Top5ParentalEducationFinder {
         return reader.read().stream()
                 .sorted(Comparator.comparing(StudentPerformance::getMathScore).reversed())
                 .limit(5)
-                .map(performance -> performance.getParentalEducation())
+                .map(StudentPerformance::getParentalEducation)
                 .collect(Collectors.toList());
     }
 }

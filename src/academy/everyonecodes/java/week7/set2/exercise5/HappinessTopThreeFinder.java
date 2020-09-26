@@ -8,10 +8,9 @@ import java.util.stream.Collectors;
 
 public class HappinessTopThreeFinder {
 
-    private HappinessDataReader reader = new HappinessDataReader();
+    private final HappinessDataReader reader = new HappinessDataReader();
 
     public List<String> findTopThree() {
-
         return reader.read().stream()
                 .sorted(Comparator.comparing(HappinessRecord::getRank))
                 .limit(3)

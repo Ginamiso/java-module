@@ -19,7 +19,7 @@ class PowerCalculatorCalculatorTest {
             "0, 0, 4"
     })
     void calculate(double expected, double input, int input2) {
-        double result = PowerCalculator.calculate(input, input2);
+        double result = powerCalculator.calculate(input, input2);
 
         Assertions.assertEquals(expected, result);
 

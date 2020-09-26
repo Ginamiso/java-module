@@ -1,6 +1,5 @@
 package academy.everyonecodes.java.week8.set2.exercise2;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
