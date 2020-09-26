@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 class AnimalMovementScholarTest {
@@ -13,15 +14,15 @@ class AnimalMovementScholarTest {
 
     @ParameterizedTest
     @MethodSource("parameters")
-    void elaborate(String expected, String input) {
-        String result = scholar.elaborate(input);
+    void elaborate(Optional<String> expected, String input) {
+        Optional<String> result = scholar.elaborate(input);
         Assertions.assertEquals(expected, result);
     }
     private static Stream<Arguments> parameters() {
         return Stream.of(
-                Arguments.of("walk,run", "dog"),
-                Arguments.of("climb,run,walk", "mammal"),
-                Arguments.of("", "cat")
+                Arguments.of(Optional.of("walk,run"), "dog"),
+                Arguments.of(Optional.of("climb,run,walk"), "mammal"),
+                Arguments.of(Optional.empty(), "cat")
         );
     }
 }
